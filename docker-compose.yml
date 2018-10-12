@@ -1,9 +1,9 @@
-version: '3'
+version: "3"
 
 services:
   analytics_service:
     image: shilpa-services:latest
-    working_dir: /app/services
+    working_dir: /app/packages
     command: ["node", "analytics_service/server.js"]
     expose:
       - "9011"
@@ -11,7 +11,7 @@ services:
       PORT: 9011
   attendance-mgt-service:
     image: shilpa-services:latest
-    working_dir: /app/services
+    working_dir: /app/packages
     command: ["node", "attendance-mgt-service/server.js"]
     expose:
       - "9009"
@@ -19,7 +19,7 @@ services:
       PORT: 9009
   auth_service:
     image: shilpa-services:latest
-    working_dir: /app/services
+    working_dir: /app/packages
     command: ["node", "auth_service/server.js"]
     expose:
       - "9001"
@@ -27,7 +27,7 @@ services:
       PORT: 9001
   classroom_service:
     image: shilpa-services:latest
-    working_dir: /app/services
+    working_dir: /app/packages
     command: ["node", "classroom_service/server.js"]
     expose:
       - "9003"
@@ -35,7 +35,7 @@ services:
       PORT: 9003
   content-mgt-service:
     image: shilpa-services:latest
-    working_dir: /app/services
+    working_dir: /app/packages
     command: ["node", "content-mgt-service/server.js"]
     expose:
       - "9004"
@@ -43,7 +43,7 @@ services:
       PORT: 9004
   grade_service:
     image: shilpa-services:latest
-    working_dir: /app/services
+    working_dir: /app/packages
     command: ["node", "grade_service/server.js"]
     expose:
       - "9008"
@@ -51,7 +51,7 @@ services:
       PORT: 9008
   mail_service:
     image: shilpa-services:latest
-    working_dir: /app/services
+    working_dir: /app/packages
     command: ["node", "mail_service/server.js"]
     expose:
       - "9006"
@@ -59,7 +59,7 @@ services:
       PORT: 9006
   notification_service:
     image: shilpa-services:latest
-    working_dir: /app/services
+    working_dir: /app/packages
     command: ["node", "notification_service/server.js"]
     expose:
       - "9015"
@@ -67,7 +67,7 @@ services:
       PORT: 9015
   reminder_service:
     image: shilpa-services:latest
-    working_dir: /app/services
+    working_dir: /app/packages
     command: ["node", "reminder_service/server.js"]
     expose:
       - "9016"
